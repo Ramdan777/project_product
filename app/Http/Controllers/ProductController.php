@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ProductCreateRequest;
 use App\Models\brand;
 use App\Models\categorie;
 use App\Models\product;
@@ -41,7 +42,7 @@ class ProductController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(ProductCreateRequest $request)
     {
         $newName = '';
 
