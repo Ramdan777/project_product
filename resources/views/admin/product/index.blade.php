@@ -85,7 +85,6 @@
                     <th>No</th>
                     <th>Name</th>
                     <th>Type</th>
-                    <th>Color</th>
                     <th>Price</th>
                     <th>Category</th>
                     <th>action</th>
@@ -97,7 +96,6 @@
                         <td>{{ $loop->iteration + $product->firstItem() - 1 }}</td>
                         <td>{{ $data->name }}</td>
                         <td>{{ $data->type }}</td>
-                        <td>{{ $data->color }}</td>
                         <td>{{ $data->price }}</td>
                         <td>{{ $data->product_category->name }}</td>
                         <td>
